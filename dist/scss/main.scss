@@ -24,7 +24,7 @@ body {
     background-attachment: fixed;
     &:after {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -64,6 +64,7 @@ body {
 
 main {
   height: 100%;
+  margin-top: 5rem;
   &#home {
     margin-top: 20vh;
     h1,
@@ -86,7 +87,6 @@ main {
     }
 
     div {
-      width: 100%;
       &.portrait {
         width: 250px;
         height: 250px;
@@ -94,9 +94,65 @@ main {
         background: url(https://media.licdn.com/dms/image/C5103AQE8-fpRDW8tVw/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=vhjGA8M_HuhGCrHHkdPy9RjXP0nvsM0Lh1er84qLDMk);
         background-size: cover;
         border: solid 3px $secondary-color;
-        position: fixed;
+        position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
+      }
+    }
+  }
+
+  &#about {
+    width: 100%;
+    p {
+      background: rgba($primary-color, 0.5);
+      color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      padding: 1rem;
+      border-radius: 1%;
+    }
+  }
+
+  &#skill {
+    div {
+      &.row {
+        text-align: center;
+        font-weight: 400;
+        div {
+          margin: 3rem;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 200px;
+          width: 200px;
+          height: 200px;
+          font-size: 2rem;
+          color: $secondary-color;
+          background-color: rgba($primary-color, 0.7);
+          border-radius: 50%;
+          border: solid 3px $secondary-color;
+        }
+      }
+    }
+  }
+  &#contact {
+    div {
+      &.row {
+        font-size: 4rem;
+        text-align: center;
+        a {
+          color: black;
+          &:visited {
+            color: black;
+          }
+          cursor: pointer;
+          &#icon:hover {
+            color: $secondary-color;
+            transition: color 0.9s ease-out;
+          }
+        }
       }
     }
   }
@@ -110,4 +166,17 @@ main {
   top: 0;
   right: 0;
   margin-top: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  text-align: center;
+  color: $primary-color;
+  width: 100px;
+  background-color: $secondary-color;
+  border-radius: 1%;
+  border: solid 3px $secondary-color;
+  transform: rotate(-45deg);
 }
