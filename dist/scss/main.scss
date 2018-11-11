@@ -84,6 +84,21 @@ main {
         background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
       }
     }
+
+    div {
+      width: 100%;
+      &.portrait {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: url(https://media.licdn.com/dms/image/C5103AQE8-fpRDW8tVw/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=vhjGA8M_HuhGCrHHkdPy9RjXP0nvsM0Lh1er84qLDMk);
+        background-size: cover;
+        border: solid 3px $secondary-color;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
   }
 }
 

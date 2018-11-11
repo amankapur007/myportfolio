@@ -62,6 +62,18 @@ main {
         margin-bottom: 2rem;
         padding: 0.2rem 5rem;
         background: rgba(73, 73, 73, 0.5); }
+    main#home div {
+      width: 100%; }
+      main#home div.portrait {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: url(https://media.licdn.com/dms/image/C5103AQE8-fpRDW8tVw/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=vhjGA8M_HuhGCrHHkdPy9RjXP0nvsM0Lh1er84qLDMk);
+        background-size: cover;
+        border: solid 3px #eece1a;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0%); }
 
 .text-span {
   color: #eece1a; }
