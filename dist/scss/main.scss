@@ -40,6 +40,7 @@ body {
 .main-nav {
   width: 100%;
   list-style: none;
+
   li {
     display: inline-block;
 
@@ -179,4 +180,9 @@ main {
   border-radius: 1%;
   border: solid 3px $secondary-color;
   transform: rotate(-45deg);
+}
+
+.anchor:target {
+  padding-top: 50px;
+  transition: all 0.5s ease;
 }

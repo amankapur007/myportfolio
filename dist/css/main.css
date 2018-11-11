@@ -132,3 +132,7 @@ main {
   border-radius: 1%;
   border: solid 3px #eece1a;
   transform: rotate(-45deg); }
+
+.anchor:target {
+  padding-top: 50px;
+  transition: all 0.5s ease; }
