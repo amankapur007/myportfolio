@@ -11,3 +11,13 @@ window.addEventListener("scroll", function(e) {
     nav[0].classList.remove("opaque");
   }
 });
+
+function activeChange(a) {
+  items = document.querySelectorAll(".active");
+
+  if (items.length) {
+    items[0].classList.remove("active");
+  }
+
+  a.classList.add("active");
+}
